@@ -1,0 +1,187 @@
+.box {
+    border: 0px none;
+    height: 495px;
+    overflow-x: hidden;
+    width: 780px;
+  }
+  
+  .gray-out {
+    background: rgba(0, 0, 0, 1);
+    backdrop-filter: blur(5px); /* this will blur the content behind the div */
+  }
+
+  .box .group {
+    height: 100%; /* adjusted to take full height */
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%; /* adjusted to take full width */
+    display: flex; /* added to align the child element */
+    align-items: center; /* added to center the child vertically */
+    justify-content: center; /* added to center the child horizontally */
+  }
+  
+  .box .overlap-group {
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 495px;
+    position: relative;
+    width: 780px;
+  }
+  
+  .box .frame {
+    align-items: center;
+    background-color: #2771ff;
+    border-radius: 5px;
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+    left: 336px;
+    padding: 10px;
+    position: absolute;
+    top: 413px;
+  }
+  
+  .box .text-wrapper {
+    color: #ffffff;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .box .h-1 {
+    color: #000000;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    left: 96px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 61px;
+  }
+  
+  .box .p {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 184px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 103px;
+    white-space: nowrap;
+  }
+  
+  .box .div {
+    align-items: flex-start;
+    display: inline-flex;
+    gap: 14px;
+    left: 41px;
+    position: absolute;
+    top: 183px;
+  }
+  
+  .box .frame-2 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+  }
+  
+  .box .text-wrapper-2 {
+    color: #000000;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .box .div-wrapper {
+    align-items: center;
+    border: 1px solid;
+    border-color: #c2c2c2;
+    border-radius: 5px;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    padding: 5px;
+    position: relative;
+    width: 223px;
+  }
+  
+  .box .text-wrapper-3 {
+    color: #acabab;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .box .text-wrapper-4 {
+    color: #b6b5b5;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .box .vector {
+    height: 14px;
+    left: 742px;
+    position: absolute;
+    top: 27px;
+    width: 14px;
+  }
+  
+  .box .frame-3 {
+    align-items: center;
+    background-color: #d9cba5;
+    border-radius: 5px;
+    display: flex;
+    gap: 8px;
+    left: 43px;
+    padding: 3px 0px;
+    position: absolute;
+    top: 257px;
+    width: 133px;
+  }
+  
+  .box .plus {
+    flex: 0 0 auto;
+    position: relative;
+  }
+  
+  .box .text-wrapper-5 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
