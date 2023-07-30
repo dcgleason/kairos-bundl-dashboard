@@ -53,7 +53,7 @@ export const Box = ({setShowBox}) => {
 };
 
 
-const LetterBookManager = () => {
+const OneWeekend = () => {
   const [email, setEmail] = useState("danny.c.gleason@gmail.com");
   const [contributorName, setContributorName] = useState("Danny Gleason");
   const [status, setStatus] = useState("Submitted");
@@ -132,7 +132,7 @@ const LetterBookManager = () => {
               <div className="absolute top-[153px] left-[61px] flex flex-row items-center justify-start gap-[151px] font-helvetica">
                 <div className="flex flex-row items-start justify-start gap-[23px]">
                   <b className="relative">Contributors</b>
-                  <div className="relative">50</div>
+                  <div className="relative">28</div>
                 </div>
                 <div onClick={() => setShowBox(true)} className="rounded-8xs bg-wheat flex flex-col p-2.5 items-start justify-start font-inter">
                   <div className="flex flex-row items-end justify-start gap-[15px]">
@@ -238,4 +238,4 @@ const LetterBookManager = () => {
   );
 };
 
-export default LetterBookManager;
+export default OneWeekend;

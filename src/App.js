@@ -4,7 +4,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import LetterBookManager from "./pages/LetterBookManager";
+import OneWeekend from "./pages/OneWeekend";
 import { useEffect } from "react";
 
 function App() {
@@ -45,7 +45,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<LetterBookManager />} />
+      <Route path="/" element={<OneWeekend />} />
     </Routes>
   );
 }
