@@ -12,8 +12,8 @@ export const Box = ({setShowBox}) => {
           <div className="frame">
             <div className="text-wrapper">Invite via Email</div>
           </div>
-          <h1 className="h-1">Add Contributor(s) to Stevie Gleason’s LetterBook</h1>
-          <p className="p">We’ll send an invitation to contribute to this letter book</p>
+          <h1 className="h-1">Add Contributor(s) to Stevie Gleason’s Palanca</h1>
+          <p className="p">We’ll send an invitation to contribute to Stevie's letters</p>
           <div className="div">
             <div className="frame-2">
               <div className="text-wrapper-2">First Name</div>
@@ -71,7 +71,7 @@ const OneWeekend = () => {
 
           <div className="absolute top-[33px] left-[43px] rounded-8xs bg-maroon w-[1368px] h-[93px]" />
               <b className="absolute top-[304px] left-[574px] text-[40px] font-helvetica">
-                Stevie Gleason’s Letterbook
+                Stevie Gleason’s Palanca
               </b>
               <div className="absolute top-[258px] left-[574px] flex flex-row items-center justify-start gap-[16px] text-[21.74px] font-helvetica">
                 <div className="relative">Kairos 201</div>
