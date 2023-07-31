@@ -80,8 +80,8 @@ const OneWeekend = () => {
                 </div>
               </div>
               <b className="absolute top-[286px] left-[1243px] text-[10px] font-helvetica">
-                {`Arrival by `}
-                <span className="[text-decoration:underline]">July 30</span>
+                {`Due by `}
+                <span className="[text-decoration:underline]">Sept 4</span>
               </b>
               <b className="absolute top-[163px] left-[608px] text-[18px] font-helvetica">
                 <Link to="/weekends" > See Other Weekends </Link>
