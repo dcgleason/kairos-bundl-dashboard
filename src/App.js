@@ -47,7 +47,7 @@ function App() {
   return (
     <Routes>
        <Route path="/" element={<ManyWeekends />} />
-      <Route path="/K201" element={<OneWeekend />} />
+      <Route path="/K201/1" element={<OneWeekend />} />
    
 
     </Routes>
