@@ -49,7 +49,7 @@ const LetterBook = ({name, email, number, linked}) => {
     >
       <div className="flex flex-col items-start justify-start">
         <div className="relative w-[1074px] h-[35px]">
-          <div className="absolute top-[10px] left-[733px]">{number}/61</div>
+          <div className="absolute top-[10px] left-[733px]">{number}/20</div>
           <div className="absolute top-[0px] left-[939px] rounded-3xs bg-wheat flex flex-row p-2.5 items-center justify-center">
        {linked?  <Link to="/"> <b className="relative">Manage Letters</b></Link> :  <b className="relative">Manage Letters</b> }
           </div>
