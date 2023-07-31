@@ -186,10 +186,10 @@ const ManyWeekends = () => {
         Start Date
       </div>
       <b className="absolute top-[207px] left-[326px] text-[40px] text-white">
-        Kairos 201 Palanca
+        Kairos 201
       </b>
       <div className="absolute top-[220.27px] left-[806px] text-[25.21px] text-dimgray text-right">
-        (41)
+        (20)
       </div>
       <div className="absolute top-[328px] left-[365px]">Attendees</div>
       <div className="absolute top-[328px] left-[284px]">#</div>
