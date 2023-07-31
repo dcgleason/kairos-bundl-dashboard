@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import PageDiv from "../components/PageDiv";
+import { Link } from 'react-router-dom';
 import "./styles.css"
 
 export const Box = ({setShowBox}) => {
@@ -83,7 +84,7 @@ const OneWeekend = () => {
                 <span className="[text-decoration:underline]">July 30</span>
               </b>
               <b className="absolute top-[163px] left-[608px] text-[18px] font-helvetica">
-                See Other Weekends
+                <Link to="/weekends" > See Other Weekends </Link>
               </b>
               <div className="absolute top-[214px] left-[197px]">Name</div>
               <div className="absolute top-[214px] left-[68px]">#</div>

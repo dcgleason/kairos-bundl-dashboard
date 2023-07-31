@@ -18,6 +18,14 @@ module.exports = {
         brown: "#8b332b",
         royalblue: "#2771ff",
         whitesmoke: "#f4f4f4",
+        royalblue: "#2771ff",
+        brown: "#8b332b",
+        yellowgreen: "#e4e757",
+        maroon: "#7e1f16",
+        black: "#000",
+        wheat: "#d9cba5",
+        dimgray: "#4e4e4e",
+        silver: "#b5b5b5",
       },
       fontFamily: {
         inter: "Inter",
@@ -26,6 +34,8 @@ module.exports = {
       borderRadius: {
         "20xl-8": "39.8px",
         "8xs": "5px",
+        "10xl": "29px",
+        "3xs": "10px",
         "2xl": "21px",
         "17xl": "36px",
         "3xl": "22px",
@@ -34,9 +44,11 @@ module.exports = {
     },
     fontSize: {
       xs: "12px",
+      sm: "14px",
     },
   },
   corePlugins: {
     preflight: false,
   },
 };
+

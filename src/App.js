@@ -5,6 +5,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import OneWeekend from "./pages/OneWeekend";
+import ManyWeekends from "./pages/ManyWeekends";
 import { useEffect } from "react";
 
 function App() {
@@ -46,6 +47,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<OneWeekend />} />
+      <Route path="/weekends" element={<ManyWeekends />} />
+
     </Routes>
   );
 }
