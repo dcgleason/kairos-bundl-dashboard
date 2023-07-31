@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from './Modal';
 
-const PersonDiv = ({name, status, email, number}) => {
+const PersonDiv = ({name, status, email, number, clicked}) => {
 
   const [isHovered, setIsHovered] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -9,7 +9,7 @@ const PersonDiv = ({name, status, email, number}) => {
 
   return (
           <div 
-          className={`flex flex-col p-2.5 items-start justify-start ${isHovered ? 'bg-slate-200' : ''}`}
+          className={`flex flex-col p-2.5 items-start justify-start ${clicked? 'bg-[#cccccc]': (isHovered ? 'bg-slate-200' : '')}`}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
