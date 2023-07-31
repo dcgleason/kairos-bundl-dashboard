@@ -51,10 +51,10 @@ const LetterBook = ({name, email, number, linked}) => {
         <div className="relative w-[1074px] h-[35px]">
           <div className="absolute top-[10px] left-[733px]">{number}/61</div>
           <div className="absolute top-[0px] left-[939px] rounded-3xs bg-wheat flex flex-row p-2.5 items-center justify-center">
-       {linked?  <Link to="/"> <b className="relative">Manage LetterBook</b></Link> :  <b className="relative">Manage LetterBook</b> }
+       {linked?  <Link to="/"> <b className="relative">Manage Letters</b></Link> :  <b className="relative">Manage Letters</b> }
           </div>
           <div className="absolute top-[10px] left-[81px]">
-            {name}'sLetter Book
+            {name}'s Palance
           </div>
           <div className="absolute top-[10px] left-[316px]">
             {email}
@@ -186,7 +186,7 @@ const ManyWeekends = () => {
         Start Date
       </div>
       <b className="absolute top-[207px] left-[326px] text-[40px] text-white">
-        Kairos 201 Letter Books
+        Kairos 201 Palanca
       </b>
       <div className="absolute top-[220.27px] left-[806px] text-[25.21px] text-dimgray text-right">
         (41)
