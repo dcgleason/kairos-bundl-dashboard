@@ -203,40 +203,40 @@ const ManyWeekends = () => {
       <div className="absolute top-[383px] left-[273px] h-[585px] overflow-y-auto flex flex-col items-center gap-[7px]">
        <LetterBook name={"Stevie Gleason"} email={"skgleason@bc.edu"} number={1} linked={true}/>
        <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={2} />
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={3} />
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={4} />
+       <LetterBook name={"Amy Gleason"} email={"agleason@bc.edu"} number={3} />
+       <LetterBook name={"David Gleason"} email={"dgleason@bc.edu"} number={4} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={5} />
+       <LetterBook name={"Eliza Gleason"} email={"egleason@bc.edu"} number={5} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={6} />
+       <LetterBook name={"Paul Koontz III"} email={"pkoontz3@bc.edu"} number={6} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={7} />
+       <LetterBook name={"Arden Koontz"} email={"akoontz@bc.edu"} number={7} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={8} />
+       <LetterBook name={"Paul Koontz Jr."} email={"pkoontz2@bc.edu"} number={8} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={9} />
+       <LetterBook name={"Caden Koontz"} email={"ckoontz@bc.edu"} number={9} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={10} />
+       <LetterBook name={"Rosie Koontz"} email={"rkoonz@bc.edu"} number={10} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={11} />
+       <LetterBook name={"Griffen Koontz"} email={"gkoontz@bc.edu"} number={11} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={12} />
+       <LetterBook name={"Stephen Sullivan"} email={"ssullivan@bc.edu"} number={12} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={13} />
+       <LetterBook name={"Sean Smith"} email={"ssmith@bc.edu"} number={13} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={14} />
+       <LetterBook name={"Joe Smith"} email={"jsmith@bc.edu"} number={14} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={15} />
+       <LetterBook name={"Nick Chappealear"} email={"nchappealear@bc.edu"} number={15} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={16} />
+       <LetterBook name={"Elle Young"} email={"eyoung@bc.edu"} number={16} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={17} />
+       <LetterBook name={"Adam Young"} email={"ayoung@bc.edu"} number={17} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={18} />
+       <LetterBook name={"Bob Irwin"} email={"bobirwin@bc.edu"} number={18} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={19} />
+       <LetterBook name={"MB Irwin"} email={"mbirwin@bc.edu"} number={19} />
 
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={20} />
+       <LetterBook name={"Barry Gleason"} email={"bgleason@bc.edu"} number={20} />
 
       </div>
       <div className="absolute top-[33px] left-[43px] rounded-8xs bg-maroon w-[1368px] h-[93px]" />
