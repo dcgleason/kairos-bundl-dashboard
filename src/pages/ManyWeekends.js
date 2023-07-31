@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 
@@ -50,7 +51,7 @@ const LetterBook = ({name, email, number}) => {
         <div className="relative w-[1074px] h-[35px]">
           <div className="absolute top-[10px] left-[733px]">{number}/61</div>
           <div className="absolute top-[0px] left-[939px] rounded-3xs bg-wheat flex flex-row p-2.5 items-center justify-center">
-            <b className="relative">Manage LetterBook</b>
+          <Link to="/"> <b className="relative">Manage LetterBook</b></Link> 
           </div>
           <div className="absolute top-[10px] left-[81px]">
             {name}'sLetter Book
