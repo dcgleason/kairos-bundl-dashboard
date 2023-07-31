@@ -262,7 +262,7 @@ const ManyWeekends = () => {
         </div>
       </div>
       <div className="absolute top-[267px] left-[1184px] rounded-[3px] bg-royalblue w-[167px] flex flex-row p-2.5 box-border items-center justify-center text-white">
-        <b className="relative">{`Print All Weekend Palanca`}</b>
+        <b className="relative">{`Print Weekend Palanca`}</b>
       </div>
   </div>
   );
