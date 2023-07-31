@@ -30,7 +30,7 @@ const KairosWeekend = ({weekend, date, clicked}) => {
 };
 
 
-const LetterBook = ({name, email, number, linked, total}) => {
+const LetterBook = ({name, email, number, linked, total, place}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -59,7 +59,7 @@ const LetterBook = ({name, email, number, linked, total}) => {
           <div className="absolute top-[10px] left-[316px]">
             {email}
           </div>
-          <div className="absolute top-[10px] left-[0px]">{number}</div>
+          <div className="absolute top-[10px] left-[0px]">{place}</div>
           <div className="absolute top-[10px] left-[513px]">{total}</div>
         </div>
       </div>
@@ -201,42 +201,42 @@ const ManyWeekends = () => {
       </div>
       <div className="absolute top-[328px] left-[600px]">Email</div>
       <div className="absolute top-[383px] left-[273px] h-[585px] overflow-y-auto flex flex-col items-center gap-[7px]">
-       <LetterBook name={"Stevie Gleason"} email={"skgleason@bc.edu"} number={25} total={28} linked={true}/>
-       <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={45} total={62}/>
-       <LetterBook name={"Amy Gleason"} email={"agleason@bc.edu"} number={42} total={69} />
-       <LetterBook name={"David Gleason"} email={"dgleason@bc.edu"} number={59} total={59} />
+       <LetterBook place={1} name={"Stevie Gleason"} email={"skgleason@bc.edu"} number={25} total={28} linked={true}/>
+       <LetterBook place={2} name={"Sara Gleason"} email={"sgleason@bc.edu"} number={45} total={62}/>
+       <LetterBook place={3} name={"Amy Gleason"} email={"agleason@bc.edu"} number={42} total={69} />
+       <LetterBook place={4} name={"David Gleason"} email={"dgleason@bc.edu"} number={59} total={59} />
 
-       <LetterBook name={"Eliza Gleason"} email={"egleason@bc.edu"} number={57} total={62} />
+       <LetterBook place={5} name={"Eliza Gleason"} email={"egleason@bc.edu"} number={57} total={62} />
 
-       <LetterBook name={"Paul Koontz III"} email={"pkoontz3@bc.edu"} number={60}  total={68}/>
+       <LetterBook place={6} name={"Paul Koontz III"} email={"pkoontz3@bc.edu"} number={60}  total={68}/>
 
-       <LetterBook name={"Arden Koontz"} email={"akoontz@bc.edu"} number={61} total={82}/>
+       <LetterBook place={7} name={"Arden Koontz"} email={"akoontz@bc.edu"} number={61} total={82}/>
 
-       <LetterBook name={"Paul Koontz Jr."} email={"pkoontz2@bc.edu"} number={48} total={52} />
+       <LetterBook place={8} name={"Paul Koontz Jr."} email={"pkoontz2@bc.edu"} number={48} total={52} />
 
-       <LetterBook name={"Caden Koontz"} email={"ckoontz@bc.edu"} number={35} total={42}/>
+       <LetterBook place={9} name={"Caden Koontz"} email={"ckoontz@bc.edu"} number={35} total={42}/>
 
-       <LetterBook name={"Rosie Koontz"} email={"rkoonz@bc.edu"} number={39} total={42} />
+       <LetterBook place={10} name={"Rosie Koontz"} email={"rkoonz@bc.edu"} number={39} total={42} />
 
-       <LetterBook name={"Griffen Koontz"} email={"gkoontz@bc.edu"} number={40} total={52}/>
+       <LetterBook place={11} name={"Griffen Koontz"} email={"gkoontz@bc.edu"} number={40} total={52}/>
 
-       <LetterBook name={"Stephen Sullivan"} email={"ssullivan@bc.edu"} number={42} total={12} />
+       <LetterBook place={12} name={"Stephen Sullivan"} email={"ssullivan@bc.edu"} number={42} total={12} />
 
-       <LetterBook name={"Sean Smith"} email={"ssmith@bc.edu"} number={41} total={53} />
+       <LetterBook place={13} name={"Sean Smith"} email={"ssmith@bc.edu"} number={41} total={53} />
 
-       <LetterBook name={"Joe Smith"} email={"jsmith@bc.edu"} number={60} total={81} />
+       <LetterBook place={14} name={"Joe Smith"} email={"jsmith@bc.edu"} number={60} total={81} />
 
-       <LetterBook name={"Nick Chappealear"} email={"nchappealear@bc.edu"} number={61} total={89} />
+       <LetterBook place={15} name={"Nick Chappealear"} email={"nchappealear@bc.edu"} number={61} total={89} />
 
-       <LetterBook name={"Elle Young"} email={"eyoung@bc.edu"} number={58} total={81} />
+       <LetterBook place={16} name={"Elle Young"} email={"eyoung@bc.edu"} number={58} total={81} />
 
-       <LetterBook name={"Adam Young"} email={"ayoung@bc.edu"} number={55} total={90}/>
+       <LetterBook place={17} name={"Adam Young"} email={"ayoung@bc.edu"} number={55} total={90}/>
 
-       <LetterBook name={"Bob Irwin"} email={"bobirwin@bc.edu"} number={54} total={80} />
+       <LetterBook place={18} name={"Bob Irwin"} email={"bobirwin@bc.edu"} number={54} total={80} />
 
-       <LetterBook name={"MB Irwin"} email={"mbirwin@bc.edu"} number={41} total={58}/>
+       <LetterBook place={19} name={"MB Irwin"} email={"mbirwin@bc.edu"} number={41} total={58}/>
 
-       <LetterBook name={"Barry Gleason"} email={"bgleason@bc.edu"} number={51} total={72}/>
+       <LetterBook place={20} name={"Barry Gleason"} email={"bgleason@bc.edu"} number={51} total={72}/>
 
       </div>
       <div className="absolute top-[33px] left-[43px] rounded-8xs bg-maroon w-[1368px] h-[93px]" />
