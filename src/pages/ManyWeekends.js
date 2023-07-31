@@ -30,7 +30,7 @@ const KairosWeekend = ({weekend, date, clicked}) => {
 };
 
 
-const LetterBook = ({name, email, number}) => {
+const LetterBook = ({name, email, number, linked}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -51,7 +51,7 @@ const LetterBook = ({name, email, number}) => {
         <div className="relative w-[1074px] h-[35px]">
           <div className="absolute top-[10px] left-[733px]">{number}/61</div>
           <div className="absolute top-[0px] left-[939px] rounded-3xs bg-wheat flex flex-row p-2.5 items-center justify-center">
-          <Link to="/"> <b className="relative">Manage LetterBook</b></Link> 
+       {linked?  <Link to="/"> <b className="relative">Manage LetterBook</b></Link> :  <b className="relative">Manage LetterBook</b> }
           </div>
           <div className="absolute top-[10px] left-[81px]">
             {name}'sLetter Book
@@ -77,8 +77,15 @@ const ManyWeekends = () => {
   return (
     <div className="relative bg-white w-full h-[1024px] overflow-hidden text-left text-xs text-black font-inter">
       <div className="absolute top-[199px] left-[47px] h-[787px]  overflow-y-auto flex flex-col items-start justify-start gap-[2px]">
-          <KairosWeekend weekend={"K201"} date={"9/5"} clicked={true}/>
-          <KairosWeekend weekend={"K202"} date={"9/5"}/>
+              <div 
+                className='flex flex-col p-2.5 items-start justify-start rounded-8xs bg-[#cccccc]'
+                >
+              <div className="flex flex-row items-start justify-start gap-[112px]">
+              <b className="relative">K201</b>
+              <div className="relative">9/5</div>
+            </div>
+          </div>         
+   <KairosWeekend weekend={"K202"} date={"9/5"}/>
 
           <KairosWeekend weekend={"K203"} date={"9/12"}/>
 
@@ -194,7 +201,7 @@ const ManyWeekends = () => {
       </div>
       <div className="absolute top-[328px] left-[600px]">Email</div>
       <div className="absolute top-[383px] left-[273px] h-[585px] overflow-y-auto flex flex-col items-center gap-[7px]">
-       <LetterBook name={"Stevie Gleason"} email={"skgleason@bc.edu"} number={1} />
+       <LetterBook name={"Stevie Gleason"} email={"skgleason@bc.edu"} number={1} linked={true}/>
        <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={2} />
        <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={3} />
        <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={4} />
