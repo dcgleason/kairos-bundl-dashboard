@@ -18,7 +18,7 @@ const PersonDiv = ({name, status, email, number}) => {
             <div className="w-[15px] ml-1 mr-2">
                 {number}
               </div>
-              <div className={`w-[122px] flex flex-row py-1 px-2.5 items-center justify-center border-[1px] border-solid border-black rounded-2xl ${status == 'Submitted' ? 'bg-green-200' : 'bg-white'} box-border`}>
+              <div className={`w-[122px] flex flex-row py-1 px-2.5 items-center justify-center  rounded-2xl ${status == 'Submitted' ? 'bg-green-200' : 'bg-white'} box-border`}>
                 <div className="relative">{status}</div>
               </div>
               <div className="w-[60px] ml-4">
