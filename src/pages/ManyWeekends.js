@@ -201,7 +201,7 @@ const ManyWeekends = () => {
       </div>
       <div className="absolute top-[328px] left-[600px]">Email</div>
       <div className="absolute top-[383px] left-[273px] h-[585px] overflow-y-auto flex flex-col items-center gap-[7px]">
-       <LetterBook name={"Stevie Gleason"} email={"skgleason@bc.edu"} number={55} linked={true}/>
+       <LetterBook name={"Stevie Gleason"} email={"skgleason@bc.edu"} number={25} total={28} linked={true}/>
        <LetterBook name={"Sara Gleason"} email={"sgleason@bc.edu"} number={45} total={62}/>
        <LetterBook name={"Amy Gleason"} email={"agleason@bc.edu"} number={42} total={69} />
        <LetterBook name={"David Gleason"} email={"dgleason@bc.edu"} number={59} total={59} />
