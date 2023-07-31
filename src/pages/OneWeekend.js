@@ -76,7 +76,7 @@ const OneWeekend = () => {
               <div className="absolute top-[258px] left-[574px] flex flex-row items-center justify-start gap-[16px] text-[21.74px] font-helvetica">
                 <div className="relative">Kairos 201</div>
                 <div className="rounded-[67px] flex flex-row py-[5px] px-2.5 items-center justify-center text-[16.06px] border-[1px] border-solid border-black">
-                  <div className="relative">{`July 28, 29 & 30 `}</div>
+                  <div className="relative">{`Sept 4, 5 & 6 `}</div>
                 </div>
               </div>
               <b className="absolute top-[286px] left-[1243px] text-[10px] font-helvetica">
