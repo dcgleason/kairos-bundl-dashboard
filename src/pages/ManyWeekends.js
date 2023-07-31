@@ -51,10 +51,10 @@ const LetterBook = ({name, email, number, linked, total, place}) => {
         <div className="relative w-[1074px] h-[35px]">
           <div className="absolute top-[10px] left-[733px]">{number}/{total}</div>
           <div className="absolute top-[0px] left-[939px] rounded-3xs bg-wheat flex flex-row p-2.5 items-center justify-center">
-       {linked?  <Link to="/"> <b className="relative">Manage Letters</b></Link> :  <b className="relative">Manage Letters</b> }
+       {linked?  <Link to="/"> <b className="relative">Manage Palanca</b></Link> :  <b className="relative">Manage Palanca</b> }
           </div>
           <div className="absolute top-[10px] left-[81px]">
-            {name}'s Palanca
+            {name}
           </div>
           <div className="absolute top-[10px] left-[316px]">
             {email}
