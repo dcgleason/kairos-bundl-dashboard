@@ -54,7 +54,7 @@ const LetterBook = ({name, email, number, linked, total}) => {
        {linked?  <Link to="/"> <b className="relative">Manage Letters</b></Link> :  <b className="relative">Manage Letters</b> }
           </div>
           <div className="absolute top-[10px] left-[81px]">
-            {name}'s Palance
+            {name}'s Palanca
           </div>
           <div className="absolute top-[10px] left-[316px]">
             {email}
