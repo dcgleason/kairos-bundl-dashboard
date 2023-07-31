@@ -99,7 +99,7 @@ const OneWeekend = () => {
                 03
               </div>
               <div className="absolute top-[307px] left-[1203px] rounded-[3px] bg-royalblue w-[139px] flex flex-row p-2.5 box-border items-center justify-center text-white">
-                <b className="relative">{`Check out & Print `}</b>
+                <b className="relative">{`Print `}</b>
               </div>
               <b className="absolute top-[447px] left-[628px] text-[17.46px] inline-block w-[265px] h-5">
                 Anny Gleason
