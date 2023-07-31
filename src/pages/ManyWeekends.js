@@ -19,7 +19,7 @@ const KairosWeekend = ({weekend, date, clicked}) => {
     <div 
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave}
-    className={`bg-white flex flex-col p-2.5 items-start justify-start ${clicked? 'rounded-8xs bg-[#cccccc]' : ''} ${isHovered ? 'rounded-8xs bg-[#dfdfdf]' : ''}`}
+    className={`flex flex-col p-2.5 items-start justify-start ${isHovered ? 'rounded-8xs bg-[#dfdfdf]' : 'bg-white'}`}
     >
     <div className="flex flex-row items-start justify-start gap-[112px]">
       <b className="relative">{weekend}</b>
