@@ -60,7 +60,7 @@ const LetterBook = ({name, email, number, linked}) => {
             {email}
           </div>
           <div className="absolute top-[10px] left-[0px]">{number}</div>
-          <div className="absolute top-[10px] left-[513px]">61</div>
+          <div className="absolute top-[10px] left-[513px]">20</div>
         </div>
       </div>
     </div>
