@@ -246,7 +246,7 @@ const ManyWeekends = () => {
         src="/image-1@2x.png"
       />
       <b className="absolute top-[73px] left-[68px] font-helvetica text-white">
-        Bundle
+        Kairos
       </b>
       <div className="absolute top-[46px] left-[1248px] rounded-8xs bg-brown flex flex-col p-2.5 items-start justify-start text-white">
         <div className="flex flex-row items-center justify-start gap-[16px]">
