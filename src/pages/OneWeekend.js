@@ -13,7 +13,7 @@ export const Box = ({setShowBox}) => {
             <div className="text-wrapper">Invite via Email</div>
           </div>
           <h1 className="h-1">Add Contributor(s) to Stevie Gleason’s Palanca</h1>
-          <p className="p">We’ll send an invitation to contribute to Stevie's letters</p>
+          <p className="p">We’ll send an invitation to contribute to Stevie's gift</p>
           <div className="div">
             <div className="frame-2">
               <div className="text-wrapper-2">First Name</div>
