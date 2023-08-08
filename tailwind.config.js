@@ -1,45 +1,57 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}"
+  ],
   theme: {
     extend: {
       colors: {
         white: "#fff",
-        maroon: "#7e1f16",
+        gray: {
+          "100": "#757575",
+          "200": "rgba(0, 0, 0, 0.4)",
+        },
+        silver: {
+          "100": "#c2c2c2",
+          "200": "#b6b5b5",
+          "300": "#b5b5b5",
+        },
+        wheat: "#d9cba5",
         black: "#000",
+        whitesmoke: {
+          "100": "#f4f4f4",
+          "200": "#ededed",
+          "300": "#ebebeb",
+        },
+        darkgray: "#acabab",
+        royalblue: "#2771ff",
+        maroon: "#7e1f16",
         gainsboro: {
-          "100": "#dfdfdf",
-          "200": "#d9d9d9",
+          "100": "#e8e8e8",
+          "200": "#dfdfdf",
+          "300": "#d9d9d9",
         },
         yellowgreen: "#e4e757",
         palegreen: "#72f487",
-        silver: "#b5b5b5",
-        wheat: "#d9cba5",
         brown: "#8b332b",
-        royalblue: "#2771ff",
-        whitesmoke: "#f4f4f4",
-        royalblue: "#2771ff",
-        brown: "#8b332b",
-        yellowgreen: "#e4e757",
-        maroon: "#7e1f16",
-        black: "#000",
-        wheat: "#d9cba5",
         dimgray: "#4e4e4e",
-        silver: "#b5b5b5",
       },
       fontFamily: {
         inter: "Inter",
         helvetica: "Helvetica",
       },
       borderRadius: {
-        "20xl-8": "39.8px",
         "8xs": "5px",
-        "10xl": "29px",
-        "3xs": "10px",
         "2xl": "21px",
         "17xl": "36px",
         "3xl": "22px",
+        "44xl": "63px",
         "12xs": "1px",
+        "20xl-8": "39.8px",
+        "10xl": "29px",
+        "3xs": "10px",
       },
     },
     fontSize: {
@@ -51,4 +63,3 @@ module.exports = {
     preflight: false,
   },
 };
-
