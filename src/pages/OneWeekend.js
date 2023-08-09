@@ -155,7 +155,7 @@ const OneWeekend = () => {
               <PageDiv email={"davidgleason@gmail.com"} status={status} name={"David Gleason"} number={"5"}/>
               <PageDiv email={"elizairwin@gmail.com"} status={status} name={"Eliza Gleason"} number={"6"}/>
               <PageDiv email={"saragleason@gmail.com"} status={status} name={"Sara Gleason"} number={"7"}/>
-              <PageDiv email={"steviegleason@gmail.com"} status={"Not submitted"} name={"Stevie Gleason"} number={"8"}/>
+              <PageDiv email={"tomgleason@gmail.com"} status={"Not submitted"} name={"Tom Gleason"} number={"8"}/>
               <PageDiv email={"mattmegan@gmail.com"} status={status} name={"Matt Megan"} number={"9"}/>
               <PageDiv email={"seansmith@gmail.com"} status={status} name={"Sean Smith"} number={"10"}/>
               <PageDiv email={"stephensully@gmail.com"} status={status} name={"Stephen Sullivan"} number={"11"}/>
