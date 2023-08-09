@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
+import NoAttendees from "../components/NoAttendees"
 
 
-
-const KairosWeekend = ({weekend, date, clicked}) => {
+const KairosWeekend = ({weekend, date, selectedWeekend}) => {
   const [isHovered, setIsHovered] = useState(false);
   
   const handleMouseEnter = () => {
@@ -17,15 +17,15 @@ const KairosWeekend = ({weekend, date, clicked}) => {
 
   return (
     <div 
-    onMouseEnter={handleMouseEnter}
-    onMouseLeave={handleMouseLeave}
-    className={`flex flex-col p-2.5 items-start justify-start ${isHovered ? 'rounded-8xs bg-[#dfdfdf]' : 'bg-white'}`}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className={`flex flex-col p-2.5 items-start justify-start rounded-8xs ${selectedWeekend === weekend ? 'bg-gainsboro-200' : isHovered ? 'bg-gainsboro-100' : 'bg-white'}`}
     >
-    <div className="flex flex-row items-start justify-start gap-[112px]">
-      <b className="relative">{weekend}</b>
-      <div className="relative">{date}</div>
+      <div className="flex flex-row items-start justify-start gap-[112px]">
+        <b className="relative">{weekend}</b>
+        <div className="relative">{date}</div>
+      </div>
     </div>
-  </div>
   );
 };
 
@@ -72,98 +72,213 @@ const ManyWeekends = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
+  const [selectedWeekend, setSelectedWeekend] = useState(null);
+
 
 
   return (
+    <>
     <div className="relative bg-white w-full h-[1024px] overflow-hidden text-left text-xs text-black font-inter">
       <div className="absolute top-[199px] left-[47px] h-[787px]  overflow-y-auto flex flex-col items-start justify-start gap-[2px]">
-              <div 
-                className='flex flex-col p-2.5 items-start justify-start rounded-8xs bg-[#cccccc]'
-                >
-              <div className="flex flex-row items-start justify-start gap-[112px]">
-              <b className="relative">K201</b>
-              <div className="relative">9/5</div>
-            </div>
-          </div>         
-   <KairosWeekend weekend={"K202"} date={"9/5"}/>
+          <div onClick={() => setSelectedWeekend("K201") } >
+           <KairosWeekend weekend={"K201"} date={"9/5"} selectedWeekend={selectedWeekend}/>
+          </div> 
+          <div onClick={() => { setSelectedWeekend("K202") }}>
+           <KairosWeekend weekend={"K202"} date={"9/5"} selectedWeekend={selectedWeekend}/>
+          </div>   
+          <div onClick={() => { setSelectedWeekend("K203")}}  >
+   
+          <KairosWeekend weekend={"K203"} date={"9/12"}  selectedWeekend={selectedWeekend}/>
+          </div>
+        <div onClick={() => {  setSelectedWeekend("K204") }}  >
 
-          <KairosWeekend weekend={"K203"} date={"9/12"}/>
+        <KairosWeekend weekend={"K204"} date={"9/12"} selectedWeekend={selectedWeekend}/>
+        </div>
 
-        <KairosWeekend weekend={"K204"} date={"9/12"}/>
+        <div onClick={() => {  setSelectedWeekend("K205") }}  >
 
-        <KairosWeekend weekend={"K205"} date={"9/21"}/>
+        <KairosWeekend weekend={"K205"} date={"9/21"} selectedWeekend={selectedWeekend}/>
+        </div>
 
-        <KairosWeekend weekend={"K206"} date={"9/21"}/>
+        <div onClick={() => {  setSelectedWeekend("K206") }}  >
 
-        <KairosWeekend weekend={"K207"} date={"10/1"}/>
+        <KairosWeekend weekend={"K206"} date={"9/21"} selectedWeekend={selectedWeekend}/>
+        </div>
 
-        <KairosWeekend weekend={"K208"} date={"10/1"}/>
+        <div onClick={() => {  setSelectedWeekend("K207") }}  >
 
-        <KairosWeekend weekend={"K209"} date={"10/1"}/>
+        <KairosWeekend weekend={"K207"} date={"10/1"} selectedWeekend={selectedWeekend}/>
+        </div>
 
-        <KairosWeekend weekend={"K210"} date={"10/8"}/>
+        <div onClick={() => {  setSelectedWeekend("K208") }}  >
 
-        <KairosWeekend weekend={"K211"} date={"10/8"}/>
+        <KairosWeekend weekend={"K208"} date={"10/1"} selectedWeekend={selectedWeekend}/>
+        </div>
 
-        <KairosWeekend weekend={"K212"} date={"10/8"}/>
+        <div onClick={() => {  setSelectedWeekend("K209") }}  >
 
-        <KairosWeekend weekend={"K213"} date={"10/15"}/>
+        <KairosWeekend weekend={"K209"} date={"10/1"} selectedWeekend={selectedWeekend}/>
+        </div>
 
-        <KairosWeekend weekend={"K214"} date={"10/15"}/>
+        <div onClick={() => {  setSelectedWeekend("K210") }}  >
 
-        <KairosWeekend weekend={"K215"} date={"10/15"}/>
+        <KairosWeekend weekend={"K210"} date={"10/8"} selectedWeekend={selectedWeekend}/>
+        </div>
 
-        <KairosWeekend weekend={"K216"} date={"10/22"}/>
+        <div onClick={() => {  setSelectedWeekend("K211") }} >
+        <KairosWeekend weekend={"K211"} date={"10/8" } selectedWeekend={selectedWeekend} />
+        </div>
 
-        <KairosWeekend weekend={"K217"} date={"10/22"}/>
 
-        <KairosWeekend weekend={"K218"} date={"10/22"}/>
 
-        <KairosWeekend weekend={"K219"} date={"10/29"}/>
+        <div onClick={() => {  setSelectedWeekend("K212") }}  >
+        <KairosWeekend weekend={"K212"} date={"10/8"}  selectedWeekend={selectedWeekend}/>
+        </div>
 
-        <KairosWeekend weekend={"K220"} date={"10/29"}/>
 
-        <KairosWeekend weekend={"K221"} date={"10/29"}/>
+        <div onClick={() => {  setSelectedWeekend("K213") }} >
+        <KairosWeekend weekend={"K213"} date={"10/15"} selectedWeekend={selectedWeekend} />
+        </div>
 
-        <KairosWeekend weekend={"K222"} date={"10/29"}/>
 
-        <KairosWeekend weekend={"K223"} date={"11/5"}/>
+        <div onClick={() => {  setSelectedWeekend("K214") }} >
+        <KairosWeekend weekend={"K214"} date={"10/15"} selectedWeekend={selectedWeekend}  />
+        </div>
 
-        <KairosWeekend weekend={"K223"} date={"11/5"}/>
 
-        <KairosWeekend weekend={"K224"} date={"11/5"}/>
+        <div onClick={() => {  setSelectedWeekend("K215") }}  >
+        <KairosWeekend weekend={"K215"} date={"10/15"} selectedWeekend={selectedWeekend}/>
+        </div>
 
-        <KairosWeekend weekend={"K226"} date={"11/5"}/>
 
-        <KairosWeekend weekend={"K227"} date={"11/12"}/>
+        <div onClick={() => {  setSelectedWeekend("K216") }}  >
+        <KairosWeekend weekend={"K216"} date={"10/22"} selectedWeekend={selectedWeekend} />
+        </div>
 
-        <KairosWeekend weekend={"K228"} date={"11/12"}/>
 
-        <KairosWeekend weekend={"K229"} date={"11/12"}/>
+        <div onClick={() => {  setSelectedWeekend("K217") }} >
+        <KairosWeekend weekend={"K217"} date={"10/22"} selectedWeekend={selectedWeekend} />
+        </div>
 
-        <KairosWeekend weekend={"K230"} date={"11/19"}/>
 
-        <KairosWeekend weekend={"K231"} date={"11/19"}/>
+        <div onClick={() => {  setSelectedWeekend("K218") }} >
+        <KairosWeekend weekend={"K218"} date={"10/22"} selectedWeekend={selectedWeekend}  />
+        </div>
 
-        <KairosWeekend weekend={"K232"} date={"11/19"}/>
 
-        <KairosWeekend weekend={"K233"} date={"11/19"}/>
+        <div onClick={() => {  setSelectedWeekend("K219") }}  >
+        <KairosWeekend weekend={"K219"} date={"10/29"} selectedWeekend={selectedWeekend} />
+        </div>
 
-        <KairosWeekend weekend={"K234"} date={"11/26"}/>
 
-        <KairosWeekend weekend={"K235"} date={"11/26"}/>
+        <div onClick={() => {  setSelectedWeekend("K220") }}   >
+        <KairosWeekend weekend={"K220"} date={"10/29"} selectedWeekend={selectedWeekend} />
+        </div>
 
-        <KairosWeekend weekend={"K236"} date={"11/26"}/>
 
-        <KairosWeekend weekend={"K237"} date={"12/3"}/>
+        <div onClick={() => {  setSelectedWeekend("K221") }}   >
+        <KairosWeekend weekend={"K221"} date={"10/29"} selectedWeekend={selectedWeekend} />
+        </div>
 
-        <KairosWeekend weekend={"K238"} date={"12/3"}/>
+        <div onClick={() => {  setSelectedWeekend("K222") }}  >
+        <KairosWeekend weekend={"K222"} date={"10/29"}  selectedWeekend={selectedWeekend} />
+        </div>
 
-        <KairosWeekend weekend={"K239"} date={"12/3"}/>
 
-        <KairosWeekend weekend={"K240"} date={"12/10"}/>
+        <div onClick={() => {  setSelectedWeekend("K223") }} selectedWeekend={selectedWeekend}  >
+        <KairosWeekend weekend={"K223"} date={"11/5"} />
+        </div>
 
-        <KairosWeekend weekend={"K241"} date={"12/10"}/>
+        <div onClick={() => {  setSelectedWeekend("K224") }}  >
+
+        <KairosWeekend weekend={"K224"} date={"11/5"}  selectedWeekend={selectedWeekend}/>
+        </div>
+
+
+        <div onClick={() => {  setSelectedWeekend("K225") }}  >
+
+        <KairosWeekend weekend={"K225"} date={"11/5"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K226")}}  >
+
+        <KairosWeekend weekend={"K226"} date={"11/5"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K227") }}  >
+
+        <KairosWeekend weekend={"K227"} date={"11/12"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K228") }}  >
+
+        <KairosWeekend weekend={"K228"} date={"11/12"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K229") }}  >
+
+        <KairosWeekend weekend={"K229"} date={"11/12"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K230") }}  >
+
+        <KairosWeekend weekend={"K230"} date={"11/19"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K231") }}  >
+
+        <KairosWeekend weekend={"K231"} date={"11/19"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K232") }}  >
+
+        <KairosWeekend weekend={"K232"} date={"11/19"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K233") }}  >
+
+        <KairosWeekend weekend={"K233"} date={"11/19"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K234") }}  >
+
+        <KairosWeekend weekend={"K234"} date={"11/26"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K235") }}  >
+
+        <KairosWeekend weekend={"K235"} date={"11/26"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K236") }}  >
+
+        <KairosWeekend weekend={"K236"} date={"11/26"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K236") }}  >
+
+        <KairosWeekend weekend={"K237"} date={"12/3"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K338") }}  >
+
+        <KairosWeekend weekend={"K238"} date={"12/3"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K339") }}  >
+
+        <KairosWeekend weekend={"K239"} date={"12/3"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K340") }}  >
+
+        <KairosWeekend weekend={"K240"} date={"12/10"} selectedWeekend={selectedWeekend}/>
+        </div>
+
+        <div onClick={() => {  setSelectedWeekend("K341") }}  >
+
+        <KairosWeekend weekend={"K241"} date={"12/10"} selectedWeekend={selectedWeekend}/>
+        </div>
 
       </div>
       <img
@@ -200,6 +315,8 @@ const ManyWeekends = () => {
         Letters Submitted
       </div>
       <div className="absolute top-[328px] left-[600px]">Email</div>
+
+      {selectedWeekend !== "K201" ? <NoAttendees/> : ( 
       <div className="absolute top-[383px] left-[273px] h-[585px] overflow-y-auto flex flex-col items-center gap-[7px]">
        <LetterBook place={1} name={"Stevie Gleason"} email={"skgleason@bc.edu"} number={25} total={28} linked={true}/>
        <LetterBook place={2} name={"Sara Gleason"} email={"sgleason@bc.edu"} number={45} total={62}/>
@@ -239,6 +356,7 @@ const ManyWeekends = () => {
        <LetterBook place={20} name={"Barry Gleason"} email={"bgleason@bc.edu"} number={51} total={72}/>
 
       </div>
+      )}
       <div className="absolute top-[33px] left-[43px] rounded-8xs bg-maroon w-[1368px] h-[93px]" />
       <img
         className="absolute top-[41px] left-[130px] w-[138px] h-[78px] object-cover"
@@ -265,6 +383,7 @@ const ManyWeekends = () => {
         <b className="relative">{`Print Palanca Notebooks`}</b>
       </div>
   </div>
+  </>
   );
 };
 
