@@ -148,26 +148,26 @@ const OneWeekend = () => {
                 src="/vector-4.svg"
               />
           <div className="absolute top-[249px] left-[59px] h-[699px] overflow-auto flex flex-col items-start justify-start gap-[2px]">
-              <PageDiv email={email} status={status} name={"Danny Gleason"} number={"1"}/>
-              <PageDiv email={email} status={"Not submitted"} name={"Paul Koontz"} number={"2"}/>
-              <PageDiv email={email} status={"Not submitted"} name={"Grandpa"} number={"3"}/>
-              <PageDiv email={email} status={status} name={"Amy Gleason"} number={"4"} clicked={true}/>
-              <PageDiv email={email} status={status} name={"David Gleason"} number={"5"}/>
-              <PageDiv email={email} status={status} name={"Eliza Gleason"} number={"6"}/>
-              <PageDiv email={email} status={status} name={"Sara Gleason"} number={"7"}/>
-              <PageDiv email={email} status={"Not submitted"} name={"Stevie Gleason"} number={"8"}/>
-              <PageDiv email={email} status={status} name={"Matt Megan"} number={"9"}/>
-              <PageDiv email={email} status={status} name={"Sean Smith"} number={"10"}/>
-              <PageDiv email={email} status={status} name={"Stephen Sullivan"} number={"11"}/>
-              <PageDiv email={email} status={"Not submitted"} name={"Matt Hutch"} number={"12"}/>
-              <PageDiv email={email} status={status} name={"Elle & Adam Young"} number={"13"}/>
-              <PageDiv email={email} status={"Not submitted"} name={"Suzie"} number={"14"}/>
-              <PageDiv email={email} status={status} name={"Uncle Arden"} number={"15"}/>
-              <PageDiv email={email} status={"Not submitted"} name={"Teddy"} number={"16"}/>
-              <PageDiv email={email} status={status} name={"Sally & Richard"} number={"17"}/>
-              <PageDiv email={email} status={status} name={"Nick Chappelear"} number={"18"}/>
-              <PageDiv email={email} status={status} name={"Bob Irwin"} number={"19"}/>
-              <PageDiv email={email} status={status} name={"MB Irwin"} number={"20"}/>
+              <PageDiv email={"dannygleason@gmail.com"} status={status} name={"Danny Gleason"} number={"1"}/>
+              <PageDiv email={"paulkoontz@gmail.com"} status={"Not submitted"} name={"Paul Koontz"} number={"2"}/>
+              <PageDiv email={"grandpa@gmail.com"} status={"Not submitted"} name={"Grandpa"} number={"3"}/>
+              <PageDiv email={"amygleason@gmail.com"} status={status} name={"Amy Gleason"} number={"4"} clicked={true}/>
+              <PageDiv email={"davidgleason@gmail.com"} status={status} name={"David Gleason"} number={"5"}/>
+              <PageDiv email={"elizairwin@gmail.com"} status={status} name={"Eliza Gleason"} number={"6"}/>
+              <PageDiv email={"saragleason@gmail.com"} status={status} name={"Sara Gleason"} number={"7"}/>
+              <PageDiv email={"steviegleason@gmail.com"} status={"Not submitted"} name={"Stevie Gleason"} number={"8"}/>
+              <PageDiv email={"mattmegan@gmail.com"} status={status} name={"Matt Megan"} number={"9"}/>
+              <PageDiv email={"seansmith@gmail.com"} status={status} name={"Sean Smith"} number={"10"}/>
+              <PageDiv email={"stephensully@gmail.com"} status={status} name={"Stephen Sullivan"} number={"11"}/>
+              <PageDiv email={"matthutch@gmail.com"} status={"Not submitted"} name={"Matt Hutch"} number={"12"}/>
+              <PageDiv email={"adamyoung@gmial.com"} status={status} name={"Elle & Adam Young"} number={"13"}/>
+              <PageDiv email={"suzie@gmail.com"} status={"Not submitted"} name={"Suzie"} number={"14"}/>
+              <PageDiv email={"arden@gmail.com"} status={status} name={"Uncle Arden"} number={"15"}/>
+              <PageDiv email={"teddy@gmail.com"} status={"Not submitted"} name={"Teddy"} number={"16"}/>
+              <PageDiv email={"sally@gmail.com"} status={status} name={"Sally & Richard"} number={"17"}/>
+              <PageDiv email={"nichchappy@gmail.com"} status={status} name={"Nick Chappelear"} number={"18"}/>
+              <PageDiv email={"bobirwin@gmail.com"} status={status} name={"Bob Irwin"} number={"19"}/>
+              <PageDiv email={"mbirwin@gmail.com"} status={status} name={"MB Irwin"} number={"20"}/>
               <PageDiv email={email} status={status} name={contributorName} number={"21"}/>
               <PageDiv email={email} status={status} name={contributorName} number={"22"}/>
               <PageDiv email={email} status={status} name={contributorName} number={"23"}/>
